@@ -1,0 +1,7 @@
+<h1><%= @task.category.capitalize %></h1>
+<p><%= @task.content %></p>
+<p>checked :<%= @task.checked %></p>
+<h2><%= link_to "Edit", edit_task_path(@task) %></h2>
+<h2><%= link_to "Delete", task_path(@task), method: :delete  %></h2>
+<h2><%= link_to "Go back to all tasks", tasks_path%></h2>
+

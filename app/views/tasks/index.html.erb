@@ -1,0 +1,7 @@
+<h1>Here is a list of the tasks:  </h1>
+<% @tasks.each do |task| %>
+  <h2><%= link_to task.category.capitalize,task_path(task) %></h2>
+  <p><%= task.content %></p>
+<% end %>
+
+

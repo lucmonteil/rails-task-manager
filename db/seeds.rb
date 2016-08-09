@@ -9,7 +9,7 @@
 require 'faker'
 
 # Creating 100 fake tasks
-100.times do
+10.times do
   task = Task.new({
     category: Faker::Hacker.verb,
     content: Faker::Hacker.say_something_smart
