@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20160809094131) do
     t.string   "content"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
-    t.string   "type"
+    t.string   "category"
     t.boolean  "checked",    default: false
   end
 

@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require 'faker'
+
+# Creating 100 fake tasks
+100.times do
+  task = Task.new({
+    category: Faker::Hacker.verb,
+    content: Faker::Hacker.say_something_smart
+  })
+  task.save
+end
